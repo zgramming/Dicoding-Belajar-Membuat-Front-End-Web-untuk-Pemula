@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/styles/main.css" />
+  </head>
+  <body>
+    <div class="container-form">
+      <div class="container-form-header">FORM BUKU</div>
+      <div class="container-form-content">
+        <form action="" id="form-books">
+          <div class="form-group mb-1">
+            <span>Judul</span>
+            <input type="text" name="title" id="title" required />
+          </div>
+          <div class="form-group mb-1">
+            <span>Penulis</span>
+            <input type="text" name="author" id="author" required />
+          </div>
+          <div class="form-group mb-1">
+            <span>Tahun</span>
+            <input type="number" name="year" id="year" required />
+          </div>
+          <div class="form-group-horizontal mb-1">
+            <span>Selesai Dibaca</span>
+            <input
+              type="checkbox"
+              name="is_completed"
+              id="is_completed"
+              value="1"
+            />
+          </div>
+
+          <div class="form-group">
+            <button class="btn-submit" type="submit" id="btn-submit">
+              Masukkan buku
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-filter">
+      <span>Cari Buku</span>
+      <input
+        type="search"
+        name="search"
+        id="search"
+        placeholder="Cari Judul"
+        class="mx-1"
+      />
+      <button type="button" id="btn-search">Cari</button>
+    </div>
+
+    <div class="container-rack">
+      <div class="container-rack-completed">
+        <div class="container-rack-header bg-green">Selesai Dibaca</div>
+        <table id="table-books">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Year</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-completed-books"></tbody>
+        </table>
+      </div>
+      <div class="container-rack-uncompleted">
+        <div class="container-rack-header bg-orange">Belum Selesai Dibaca</div>
+        <table id="table-books">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Year</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-uncompleted-books"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

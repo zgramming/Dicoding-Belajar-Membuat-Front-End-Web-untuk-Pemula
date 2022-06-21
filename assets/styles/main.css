@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mx-1 {
+  margin: 0 1em;
+}
+
+.container-form {
+  max-width: 60%;
+  margin: 32px auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-form-header {
+  padding: 16px;
+  background-color: orange;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16pt;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container-form-content {
+  padding: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-submit {
+  padding: 16px;
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-submit:hover {
+  background-color: orangered;
+}
+
+/*
+  Filter
+  */
+.container-filter {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto 32px auto;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/*
+  Rack
+  */
+.container-rack {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.container-rack-header {
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16pt;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container-rack-completed {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.container-rack-uncompleted {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.bg-green {
+  background-color: green !important;
+}
+
+.bg-orange {
+  background-color: orange !important;
+}
+
+#table-books {
+  border-collapse: collapse;
+}
+
+#table-books > thead > tr > th,
+#table-books > tbody > tr > td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table-books > thead {
+  background-color: orange;
+  color: white;
+}
